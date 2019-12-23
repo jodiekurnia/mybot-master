@@ -1,0 +1,1 @@
+php /mybot/start.php
