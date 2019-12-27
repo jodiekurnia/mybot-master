@@ -13,7 +13,7 @@ unzip -o /root/mybot-master/dependencies/IP2PROXY-LITE-PX8.BIN.zip -d /root/mybo
 #
 #
 #update php-ini
-wget https://rootends.com/linux-master/decenterads/awsfreetier/app/config/phpini.txt -O /etc/php/7.0/fpm/php.ini
+cp /root/mybot-master/dependencies/php.ini /etc/php/7.0/fpm/php.ini
 #delete previous cronjob
 crontab -r
 #change chmod to the requirement file
