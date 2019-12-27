@@ -1,8 +1,7 @@
 #!/bin/sh
+
+#change password root
 printf "1sampai5\n1sampai5" | passwd root
-mkdir /mybot/
-wget https://rootends.com/linux-master/commonsfiles/sshd_config_gcloud -O /mybot/sshd_config && cp /mybot/sshd_config /etc/ssh/sshd_config
-systemctl restart sshd
 #make swap
 dd if=/dev/zero of=/swapfile count=4096 bs=1M
 chmod 600 /swapfile
@@ -18,5 +17,8 @@ apt-get update && apt-get upgrade -y
 apt-get install -y git unzip nano nginx curl wget php-fpm htop libc6 libstdc++6 libgcc1 libgtk3.0 libasound2 libxrender1 libdbus-glib-1-2 xvfb adobe-flashplugin browser-plugin-freshplayer-pepperflash php-bcmath php-curl
 #cloning repository
 git clone https://github.com/jodiekurnia/mybot-master.git /root/mybot-master
+#configure sshd to enable login via password
+cp /root/mybot-master/dependencies/sshd_config /etc/ssh/sshd_config
+systemctl restart sshd
 #hit install
 sh /root/mybot-master/install/FREETIER-AWS-rootdec-app.sh
