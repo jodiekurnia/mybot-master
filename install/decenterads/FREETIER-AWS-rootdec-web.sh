@@ -4,11 +4,7 @@ dpkg -i /root/mybot-master/dependencies/firefox-mozilla-build_58.0-0ubuntu1_amd6
 #install adobe-flashplugin
 mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/dependencies/libflashplayer.so /root/.mozilla/plugins/libflashplayer.so
 #Create SymLink
-#
-#
-# To Do List
-#
-#
+ln -s /root/mybot-master/decenterads/web/www /var/www/html
 #update php-ini
 cp /root/mybot-master/dependencies/php.ini /etc/php/7.0/fpm/php.ini
 cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
