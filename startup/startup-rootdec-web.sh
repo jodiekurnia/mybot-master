@@ -18,7 +18,7 @@ add-apt-repository multiverse
 #configure-grub
 DEBIAN_FRONTEND=noninteractive dpkg-reconfigure grub-pc
 #upgrade & install dependencies
-apt-get upgrade -y && apt-get install -y git unzip nano nginx curl wget php-fpm htop libc6 libstdc++6 libgcc1 libgtk3.0 libasound2 libxrender1 libdbus-glib-1-2 xvfb adobe-flashplugin browser-plugin-freshplayer-pepperflash php-bcmath php-curl
+apt-get update -y && apt-get install -y git unzip nano nginx curl wget php-fpm htop libc6 libstdc++6 libgcc1 libgtk3.0 libasound2 libxrender1 libdbus-glib-1-2 xvfb adobe-flashplugin browser-plugin-freshplayer-pepperflash php-bcmath php-curl
 #cloning repository
 git clone https://github.com/jodiekurnia/mybot-master.git /root/mybot-master
 #configure sshd to enable login via password
