@@ -8,6 +8,8 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 echo "/swapfile   none    swap    sw    0   0" >> /etc/fstab
+#add env deb _frontend
+export DEBIAN_FRONTEND="noninteractive"
 #update repo & install software properties
 apt-get update && apt-get install software-properties-common
 #add repository
