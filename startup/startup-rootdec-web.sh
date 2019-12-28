@@ -23,4 +23,4 @@ git clone https://github.com/jodiekurnia/mybot-master.git /root/mybot-master
 cp /root/mybot-master/dependencies/sshd_config /etc/ssh/sshd_config
 systemctl restart sshd
 #hit install
-sh /root/mybot-master/install/FREETIER-AWS-rootdec-web.sh
+sh /root/mybot-master/install/FREETIER-AWS-rootdec-web.sh >> /var/log/install-mybot-master.log
