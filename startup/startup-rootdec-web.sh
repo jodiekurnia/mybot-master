@@ -8,13 +8,15 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 echo "/swapfile   none    swap    sw    0   0" >> /etc/fstab
+#update repo & install software properties
+apt-get update && apt-get install software-properties-common
 #add repository
 add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
+add-apt-repository multiverse
 #configure-grub
 DEBIAN_FRONTEND=noninteractive dpkg-reconfigure grub-pc
-#update and install dependencies
-apt-get update && apt-get upgrade -y
-apt-get install -y git unzip nano nginx curl wget php-fpm htop libc6 libstdc++6 libgcc1 libgtk3.0 libasound2 libxrender1 libdbus-glib-1-2 xvfb adobe-flashplugin browser-plugin-freshplayer-pepperflash php-bcmath php-curl
+#upgrade & install dependencies
+apt-get upgrade -y && apt-get install -y git unzip nano nginx curl wget php-fpm htop libc6 libstdc++6 libgcc1 libgtk3.0 libasound2 libxrender1 libdbus-glib-1-2 xvfb adobe-flashplugin browser-plugin-freshplayer-pepperflash php-bcmath php-curl
 #cloning repository
 git clone https://github.com/jodiekurnia/mybot-master.git /root/mybot-master
 #configure sshd to enable login via password
