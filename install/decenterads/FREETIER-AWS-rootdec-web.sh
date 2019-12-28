@@ -3,8 +3,11 @@
 dpkg -i /root/mybot-master/dependencies/firefox-mozilla-build_58.0-0ubuntu1_amd64.deb
 #install adobe-flashplugin
 mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/dependencies/libflashplayer.so /root/.mozilla/plugins/libflashplayer.so
-#Create SymLink
+#Create SymLink & set owner + chmod
+rm -rf /var/www/html
 ln -s /root/mybot-master/decenterads/web/www /var/www/html
+chown www-data:www-data /var/www/html
+chmod +x /var/www/html
 #update php-ini
 cp /root/mybot-master/dependencies/php.ini /etc/php/7.0/fpm/php.ini
 cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
