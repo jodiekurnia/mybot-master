@@ -11,7 +11,7 @@ echo "/swapfile   none    swap    sw    0   0" >> /etc/fstab
 #add env deb _frontend
 export DEBIAN_FRONTEND="noninteractive"
 #update repo & install software properties
-apt-get update && apt-get install software-properties-common
+apt-get update && apt-get install -y software-properties-common
 #add repository
 add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 add-apt-repository multiverse
