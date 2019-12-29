@@ -15,8 +15,7 @@ cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 crontab -r
 #add cronjob
 crontab -l > mycron
-echo "@reboot php /root/mybot-master/decenterads/web/config/kill.php >> /var/log/jodiecron.log" >> mycron
-echo "*/10 * * * * php /root/mybot-master/decenterads/web/config/kill.php >> /var/log/jodiecron.log" >> mycron
+echo "*/10 * * * * php /root/mybot-master/decenterads/web/config/kill.php > /dev/null 2>&1" >> mycron
 crontab mycron
 rm mycron
 #add /etc/hosts
@@ -38,4 +37,5 @@ echo "127.0.0.1 hondanews.com" >> /etc/hosts
 systemctl enable nginx && systemctl enable php7.0-fpm
 #set chmod
 chmod +x root/mybot-master/decenterads/web/config/*
+#reboot
 shutdown -r now
