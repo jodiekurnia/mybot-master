@@ -13,5 +13,6 @@ unzip -o /root/mybot-master/dependencies/IP2PROXY-LITE-PX8.BIN.zip -d /root/mybo
 chown www-data:www-data /root/mybot-master/decenterads/web/www/ -R
 chmod +x /root/mybot-master/decenterads/web/www/ -R
 chmod +x root/mybot-master/decenterads/web/config/*
+systemctl reload nginx
 #start bot
 /root/mybot-master/decenterads/web/config/start.sh
