@@ -3,11 +3,9 @@
 dpkg -i /root/mybot-master/dependencies/firefox-mozilla-build_58.0-0ubuntu1_amd64.deb
 #install adobe-flashplugin
 mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/dependencies/libflashplayer.so /root/.mozilla/plugins/libflashplayer.so
-#extract DB-IP
-unzip -o /root/mybot-master/dependencies/GeoLite2-City.mmdb.zip -d /root/mybot-master/decenteradsBig/app/www/inc
-unzip -o /root/mybot-master/dependencies/IP2PROXY-LITE-PX8.BIN.zip -d /root/mybot-master/decenteradsBig/app/www/inc
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
+rm -rf /etc/nginx/sites-available/default
 ln -s /root/mybot-master/decenteradsBig/app/www /var/www/html
 ls -s /root/mybot-master/decenteradsBig/app/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html

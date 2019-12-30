@@ -5,6 +5,7 @@ dpkg -i /root/mybot-master/dependencies/firefox-mozilla-build_58.0-0ubuntu1_amd6
 mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/dependencies/libflashplayer.so /root/.mozilla/plugins/libflashplayer.so
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
+rm -rf /etc/nginx/sites-available/default
 ln -s /root/mybot-master/decenterads/web/www /var/www/html
 ls -s /root/mybot-master/decenterads/web/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html
