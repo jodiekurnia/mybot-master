@@ -6,9 +6,10 @@ mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/de
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
 ln -s /root/mybot-master/decenteradsBig/web/www /var/www/html
+ls -s /root/mybot-master/decenteradsBig/web/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html
 chmod +x /var/www/html
-#update php-ini
+#update php-ini default file
 cp /root/mybot-master/dependencies/php.ini /etc/php/7.0/fpm/php.ini
 cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #delete previous cronjob

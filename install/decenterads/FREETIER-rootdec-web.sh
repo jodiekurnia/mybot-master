@@ -6,6 +6,7 @@ mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/de
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
 ln -s /root/mybot-master/decenterads/web/www /var/www/html
+ls -s /root/mybot-master/decenterads/web/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html
 chmod +x /var/www/html
 #update php-ini

@@ -9,6 +9,7 @@ unzip -o /root/mybot-master/dependencies/IP2PROXY-LITE-PX8.BIN.zip -d /root/mybo
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
 ln -s /root/mybot-master/decenteradsBig/app/www /var/www/html
+ls -s /root/mybot-master/decenteradsBig/app/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html
 chmod +x /var/www/html
 #update php-ini
