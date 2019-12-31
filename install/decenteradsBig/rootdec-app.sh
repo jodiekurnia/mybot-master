@@ -5,12 +5,11 @@ dpkg -i /root/mybot-master/dependencies/firefox-mozilla-build_58.0-0ubuntu1_amd6
 mkdir /root/.mozilla && mkdir /root/.mozilla/plugins && cp /root/mybot-master/dependencies/libflashplayer.so /root/.mozilla/plugins/libflashplayer.so
 #Create SymLink & set owner + chmod
 rm -rf /var/www/html
-rm -rf /etc/nginx/sites-available/default
 ln -s /root/mybot-master/decenteradsBig/app/www /var/www/html
-ls -s /root/mybot-master/decenteradsBig/app/config/default /etc/nginx/sites-available/default
 chown www-data:www-data /var/www/html
 chmod +x /var/www/html
-#update php-ini
+#copy config file php + nginx
+cp /root/mybot-master/decenteradsBig/app/config/default /etc/nginx/sites-available/default
 cp /root/mybot-master/dependencies/php.ini /etc/php/7.0/fpm/php.ini
 cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 #delete previous cronjob
