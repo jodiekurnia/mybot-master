@@ -25,5 +25,4 @@ git clone https://github.com/jodiekurnia/mybot-master.git /root/mybot-master
 cp /root/mybot-master/dependencies/sshd_config /etc/ssh/sshd_config
 systemctl restart sshd
 #change chmod and hit install
-chmod +x /root/mybot-master/install/decenteradsBig/rootdec-web.sh
 sh /root/mybot-master/install/decenteradsBig/rootdec-web.sh
