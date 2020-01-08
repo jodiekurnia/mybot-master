@@ -16,7 +16,7 @@ cp /root/mybot-master/dependencies/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 crontab -r
 #add cronjob
 crontab -l > mycron
-echo "*/10 * * * * php /root/mybot-master/decenterads/app/config/kill.php > > /dev/null 2>&1" >> mycron
+echo "*/10 * * * * php /root/mybot-master/decenterads/app/config/kill.php > /dev/null 2>&1" >> mycron
 crontab mycron
 rm mycron
 #add /etc/hosts
