@@ -17,6 +17,7 @@ crontab -r
 #add cronjob
 crontab -l > mycron
 echo "*/10 * * * * php /root/mybot-master/decenteradsBig/app/config/kill.php > > /dev/null 2>&1" >> mycron
+crontab mycron
 rm mycron
 #add /etc/hosts
 echo "127.0.0.1 monespace.me" >> /etc/hosts
