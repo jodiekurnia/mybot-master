@@ -1,4 +1,4 @@
 .vscode
 *.bin
 *.mmdb
-.DS_Store
+**/*.DS_Store
