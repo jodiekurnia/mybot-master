@@ -1,5 +1,5 @@
 #!/bin/bash
-for ((i=0; i<15; i++));
+for ((i=0; i<10; i++));
  do xvfb-run -a /root/mybot-master/core/slimerjs /root/mybot-master/decenterads/1cpu/web/bot/decenteradsweb.js . &
  sleep 1
 done
