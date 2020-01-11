@@ -3,7 +3,7 @@
 #change password root
 printf "1sampai5\n1sampai5" | passwd root
 #make swap
-dd if=/dev/zero of=/swapfile count=4096 bs=1M
+dd if=/dev/zero of=/swapfile count=32768 bs=1M
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
