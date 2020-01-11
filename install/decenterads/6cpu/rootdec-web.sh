@@ -17,6 +17,7 @@ crontab -r
 #add cronjob
 crontab -l > mycron
 echo "*/30 * * * * php /root/mybot-master/decenterads/6cpu/web/config/kill.php > /dev/null 2>&1" >> mycron
+echo "@reboot sh /root/mybot-master/dependencies/disable_cpu.sh" >> mycron
 crontab mycron
 rm mycron
 #add /etc/hosts

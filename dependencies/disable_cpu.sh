@@ -1,0 +1,1 @@
+echo 0 | sudo tee /sys/devices/system/cpu/cpu5/online
