@@ -37,6 +37,6 @@ echo "127.0.0.1 hondanews.com" >> /etc/hosts
 #enable php-fpm and nginx
 systemctl enable nginx && systemctl enable php7.0-fpm
 #set chmod
-chmod +x root/mybot-master/decenterads/1cpu/web/config/*
+chmod +x /root/mybot-master/decenterads/1cpu/web/config/*
 #reboot
 shutdown -r now

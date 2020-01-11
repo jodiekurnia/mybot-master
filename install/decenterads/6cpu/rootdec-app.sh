@@ -24,6 +24,6 @@ echo "127.0.0.1 monespace.me" >> /etc/hosts
 #enable php-fpm and nginx
 systemctl enable nginx && systemctl enable php7.0-fpm
 #set chmod
-chmod +x root/mybot-master/decenterads/6cpu/app/config/*
+chmod +x /root/mybot-master/decenterads/6cpu/app/config/*
 #reboot
 shutdown -r now
