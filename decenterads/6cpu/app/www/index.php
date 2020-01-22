@@ -135,9 +135,7 @@ if(isset($get->postal->code)){
 	$query .= '&zip='.$get->postal->code;
 }
 /** End Randomizing Data JSON **/
-$arr_url = ['adsrv1.rootends.com', 'adsrv2.rootends.com'];
 $fullurl1 = 'http://adsrv2.rootends.com/app/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
-$fullurl2 = 'http://'.$arr_url[array_rand($arr_url)].'/waardexapp/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 ?>
 <!DOCTYPE html>
 <html>
@@ -153,7 +151,6 @@ body{
 </head>
 <body>
 <script type="text/javascript" src="<?=$fullurl1?>"></script>
-<script type="text/javascript" src="<?=$fullurl2?>"></script>
 <div id="banner" style="z-index:-1;top:0px;left:0px; position:absolute"></div>
 <p id="error"></p>
 </body>
