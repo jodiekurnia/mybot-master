@@ -7,7 +7,7 @@ cd /tmp
 sudo rm -r slimerjs*
 cd /root/mybot-master/ && git pull
 #hit update file
-/root/mybot-master/update/app/cron_1cpu.sh
+/root/mybot-master/decenterads/update/app/cron_1cpu.sh
 #extract DB-IP
 unzip -o /root/mybot-master/dependencies/GeoLite2-City.mmdb.zip -d /root/mybot-master/decenterads/www/app/inc
 unzip -o /root/mybot-master/dependencies/IP2PROXY-LITE-PX8.BIN.zip -d /root/mybot-master/decenterads/www/app/inc
