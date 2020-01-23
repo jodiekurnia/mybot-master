@@ -116,10 +116,10 @@ if(isset($get->postal->code)){
 	$query .= '&zip='.$get->postal->code;
 }
 /** End Randomizing Data JSON **/
-
-$atas = 'http://adsrv1.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
-$tengah = 'http://adsrv1.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
-$bawah = 'http://adsrv1.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+$arrSrv = ['adsrv1','adsrv2'];
+$atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
+$tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
 ?>
 <!DOCTYPE html>
 <html>
