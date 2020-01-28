@@ -117,9 +117,12 @@ if(isset($get->postal->code)){
 }
 /** End Randomizing Data JSON **/
 $arrSrv = ['adsrv1','adsrv2'];
-$atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
-$tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
-$bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+$dec_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
+$dec_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$dec_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+$wr_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
+$wr_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$wr_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
 ?>
 <!DOCTYPE html>
 <html>
@@ -133,8 +136,12 @@ body{
 </style>
 </head>
 <body>
-<script type="text/javascript" src="<?=$atas?>"></script>
-<script type="text/javascript" src="<?=$tengah?>"></script>
-<script type="text/javascript" src="<?=$bawah?>"></script>
+<script type="text/javascript" src="<?=$dec_atas?>"></script>
+<script type="text/javascript" src="<?=$dec_tengah?>"></script>
+<script type="text/javascript" src="<?=$dec_bawah?>"></script>
+
+<script type="text/javascript" src="<?=$wr_atas?>"></script>
+<script type="text/javascript" src="<?=$wr_tengah?>"></script>
+<script type="text/javascript" src="<?=$wr_bawah?>"></script>
 </body>
 </html>
