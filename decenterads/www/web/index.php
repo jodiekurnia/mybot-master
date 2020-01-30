@@ -120,6 +120,11 @@ $arrSrv = ['adsrv1','adsrv2'];
 $dec_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
 $dec_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 $dec_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+
+
+$waardex_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
+$waardex_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$waardex_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
 ?>
 <!DOCTYPE html>
 <html>
@@ -136,5 +141,9 @@ body{
 <script type="text/javascript" src="<?=$dec_atas?>"></script>
 <script type="text/javascript" src="<?=$dec_tengah?>"></script>
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
+
+<script type="text/javascript" src="<?=$waardex_atas?>"></script>
+<script type="text/javascript" src="<?=$waardex_tengah?>"></script>
+<script type="text/javascript" src="<?=$waardex_bawah?>"></script>
 </body>
 </html>
