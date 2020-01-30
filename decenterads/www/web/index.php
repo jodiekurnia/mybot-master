@@ -122,9 +122,9 @@ $dec_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='
 $dec_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
 
 
-$waardex_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
-$waardex_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
-$waardex_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+$waardex_atas = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
+$waardex_tengah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$waardex_bawah = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
 ?>
 <!DOCTYPE html>
 <html>
