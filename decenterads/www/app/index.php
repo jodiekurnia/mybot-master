@@ -136,7 +136,7 @@ if(isset($get->postal->code)){
 }
 /** End Randomizing Data JSON **/
 $arrSrv = ['adsrv1','adsrv2'];
-$fullurl1 = 'http://'.$arrSrv[array_rand($arrSrv)].'.rootends.com/app/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$fullurl1 = 'http://adsrv2.rootends.com/app/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 ?>
 <!DOCTYPE html>
 <html>
