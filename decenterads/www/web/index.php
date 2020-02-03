@@ -117,12 +117,12 @@ if(isset($get->postal->code)){
 }
 /** End Randomizing Data JSON **/
 $arrSrv = ['adsrv1','adsrv2'];
-$dec_atas = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
-$dec_tengah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
-$dec_bawah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+$dec_atas = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90&adnetwork=decenterads';
+$dec_tengah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250&adnetwork=decenterads';
+$dec_bawah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600&adnetwork=decenterads';
 
 
-$war_tengah = 'http://adsrv2.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$war_tengah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250&adnetwork=waardex';
 ?>
 <!DOCTYPE html>
 <html>
