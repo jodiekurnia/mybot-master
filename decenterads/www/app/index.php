@@ -137,6 +137,7 @@ if(isset($get->postal->code)){
 /** End Randomizing Data JSON **/
 $arrSrv = ['adsrv1','adsrv2'];
 $fullurl1 = 'http://adsrv1.rootends.com/app/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
+$fullurl2 = 'http://adsrv1.rootends.com/waardexapp/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 ?>
 <!DOCTYPE html>
 <html>
@@ -152,6 +153,7 @@ body{
 </head>
 <body>
 <script type="text/javascript" src="<?=$fullurl1?>"></script>
+<script type="text/javascript" src="<?=$fullurl2?>"></script>
 <div id="banner" style="z-index:-1;top:0px;left:0px; position:absolute"></div>
 <p id="error"></p>
 </body>

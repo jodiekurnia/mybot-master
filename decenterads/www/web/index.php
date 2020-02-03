@@ -120,6 +120,9 @@ $arrSrv = ['adsrv1','adsrv2'];
 $dec_atas = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90';
 $dec_tengah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 $dec_bawah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600';
+
+
+$war_tengah = 'http://adsrv2.rootends.com/waardexweb/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250';
 ?>
 <!DOCTYPE html>
 <html>
@@ -136,5 +139,8 @@ body{
 <script type="text/javascript" src="<?=$dec_atas?>"></script>
 <script type="text/javascript" src="<?=$dec_tengah?>"></script>
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
+
+
+<script type="text/javascript" src="<?=$war_tengah?>"></script>
 </body>
 </html>
