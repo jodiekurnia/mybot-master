@@ -136,11 +136,12 @@ body{
 </style>
 </head>
 <body>
+<!-- DecenterAds -->
 <script type="text/javascript" src="<?=$dec_atas?>"></script>
 <script type="text/javascript" src="<?=$dec_tengah?>"></script>
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
 
-
-<!-- <script type="text/javascript" src="<?=$war_tengah?>"></script> -->
+<!-- Waardex -->
+<script type="text/javascript" src="<?=$war_tengah?>"></script>
 </body>
 </html>
