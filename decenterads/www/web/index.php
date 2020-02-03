@@ -142,6 +142,6 @@ body{
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
 
 <!-- Waardex -->
-<script type="text/javascript" src="<?=$war_tengah?>"></script>
+<!-- <script type="text/javascript" src="<?=$war_tengah?>"></script> -->
 </body>
 </html>
