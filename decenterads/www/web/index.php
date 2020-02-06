@@ -122,7 +122,10 @@ $dec_tengah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).
 $dec_bawah = 'http://adsrv2.rootends.com/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600&adnetwork=decenterads';
 
 
-$war_tengah = 'http://45.77.121.133/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250&adnetwork=waardex';
+
+$war_atas = 'http://149.248.0.31/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=728x90&adnetwork=waardex';
+$war_tengah = 'http://149.248.0.31/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=300x250&adnetwork=waardex';
+$war_bawah = 'http://149.248.0.31/web/?impid='.$microtime.getRandNum(9).'&'.$query.'&size=160x600&adnetwork=waardex';
 ?>
 <!DOCTYPE html>
 <html>
@@ -142,6 +145,8 @@ body{
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
 
 <!-- Waardex -->
+<script type="text/javascript" src="<?=$war_atas?>"></script>
 <script type="text/javascript" src="<?=$war_tengah?>"></script>
+<script type="text/javascript" src="<?=$war_bawah?>"></script>
 </body>
 </html>
