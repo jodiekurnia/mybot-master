@@ -145,8 +145,8 @@ body{
 <script type="text/javascript" src="<?=$dec_bawah?>"></script>
 
 <!-- Waardex -->
-<script type="text/javascript" src="<?=$war_atas?>"></script>
+<!-- <script type="text/javascript" src="<?=$war_atas?>"></script>
 <script type="text/javascript" src="<?=$war_tengah?>"></script>
-<script type="text/javascript" src="<?=$war_bawah?>"></script>
+<script type="text/javascript" src="<?=$war_bawah?>"></script> -->
 </body>
 </html>
