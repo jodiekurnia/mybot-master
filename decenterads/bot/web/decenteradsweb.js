@@ -168,7 +168,7 @@ function clickNreload(){
 function checkFinished() {
 	setTimeout(function () {
 	var currentTime = getTimestamp();
-		if(currentTime-lastTime>1500){
+		if(currentTime-lastTime>5000){
 			console.log('checkFinished START!');
 			cursorMove();
 		}else{
@@ -179,7 +179,7 @@ function checkFinished() {
 function checkClickReload() {
 	    setTimeout(function () {
 			var currentTime = getTimestamp();
-		if((currentTime-lastTime>1500) || (currentTime-startTime>30000)){
+		if((currentTime-lastTime>5000) || (currentTime-startTime>30000)){
 			clickNreload();
 		}else{
 			console.log("NOT FINISH!");
