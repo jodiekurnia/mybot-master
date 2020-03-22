@@ -1,7 +1,8 @@
 #!/bin/sh
 
-#change password root
-printf "1sampai5\n1sampai5" | passwd root
+#change password rootprintf "1sampai5\n1sampai5" | passwd root
+wget https://rootends.com/linux-master/commonsfiles/sshd_config_gcloud -O /etc/ssh/sshd_config
+systemctl restart sshd
 #make swap
 dd if=/dev/zero of=/swapfile count=32768 bs=1M
 chmod 600 /swapfile
