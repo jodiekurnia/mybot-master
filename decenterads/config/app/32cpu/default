@@ -1,0 +1,23 @@
+server {
+    listen 80;
+
+    root /var/www/html;
+    index index.php index.html index.htm index.nginx-debian.html;
+
+    server_name _;
+	
+    location / {
+		try_files $uri $uri/ /index.php;
+	}
+    
+    location ~ \.html$ {
+        try_files $uri $uri/ /index.php;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        add_header 'Cache-Control' 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+		expires off;
+    }
+}
