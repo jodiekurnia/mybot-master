@@ -59,7 +59,7 @@ phantom.injectJs("randexp.min.js");
 phantom.injectJs("UAGenerator.js");
 var gen = new UAGenerator();
 function random_ua(){
-	return gen.generate(["chrome_win", "chrome_mac", "firefox_win", "firefox_mac", "safari_mac", "safari_ipad", "safari_iphone","firefox_android"]);
+	return gen.generate(["chrome_win", "chrome_mac", "firefox_win", "firefox_mac", "safari_mac", "safari_ipad", "safari_iphone"]); //"firefox_android"
 }
 //Required Setting
 var wp = require("webpage").create();
@@ -77,6 +77,7 @@ wp.onLoadStarted = function(url, isFrame) {
 	wp.settings.userAgent = head["User-Agent"];
 	wp.customHeaders = head;
 	if(!isFrame){
+		console.log(head["User-Agent"]);
 		startTime = getTimestamp();
 		cursorMove();
 	}
